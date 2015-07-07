@@ -17,9 +17,17 @@ describe("Find The Largest Palindrome Product", function () {
     var product = findPalindromeProduct(3);
 
     expect(product.palindromeNumber).to.equal(906609);
+  });
 
-    // add your tests here
-    //
-    //
+  it("of two 4 digit numbers", function() {
+
+    var product = findPalindromeProduct(4);
+
+    expect(product.palindromeNumber).to.equal(99000099);
+  });
+
+  it("of two 5 digit numbers", function() {
+
+    var product = findPalindromeProduct(5);
   });
 });
